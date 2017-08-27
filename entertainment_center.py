@@ -42,9 +42,32 @@ deadpool = Movie('Deadpool',
                  '/220px-Deadpool_poster.jpg',
                  'https://www.youtube.com/watch?v=9vN6DHB6bJc'
                  )
+
+logan = Movie('Logan',
+              'https://upload.wikimedia.org/wikipedia/en/3/'
+              '37/Logan_2017_poster.jpg',
+              'https://www.youtube.com/watch?v=RH3OxVFvTeg'
+              )
+
+
+guardians_of_the_galaxy = Movie('Guardians of The Galaxy Vol. 2',
+                                'https://upload.wikimedia.org/wikipedia'
+                                '/en/thumb/9/95/GotG_Vol2_poster.jpg'
+                                '/220px-GotG_Vol2_poster.jpg',
+                                'https://www.youtube.com/watch'
+                                '?v=2cv2ueYnKjg'
+                                )
+
+beauty_and_the_beast = Movie("Beauty and The Beast",
+                             'https://upload.wikimedia.org/wikipedia/en/d'
+                             '/d6/Beauty_and_the_Beast_2017_poster.jpg',
+                             "https://www.youtube.com/watch?v=e3Nl_TCQXuw"
+                             )
 # pass movie list to open_movie_page function
 
 movies = [wonder_woman, perfect_guy,
-          the_martian, joy, victor_frankenstein, deadpool
+          the_martian, joy, victor_frankenstein, deadpool,
+          logan, guardians_of_the_galaxy,
+          beauty_and_the_beast
           ]
 open_movies_page(movies)
