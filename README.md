@@ -19,3 +19,6 @@
  				and pass it to the list movies. Then save and run by doing 
  				
  				$ Python entertainment_center.py
+
+
+| Visit https://adeyinkaadegbenro.github.io/Movie_Trailer_Website/ to view a sample of the generated page.
