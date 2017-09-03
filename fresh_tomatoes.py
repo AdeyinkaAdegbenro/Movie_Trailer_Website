@@ -15,7 +15,7 @@ main_page_head = '''
     <link href="https://fonts.googleapis.com/css?family=Frijole|Old+Standard+TT" rel="stylesheet">
     <!--Font-Awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
     <style type="text/css" media="screen">
         body {
