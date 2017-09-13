@@ -23,6 +23,11 @@ main_page_head = '''
             font-family: 'Old Standard TT', serif;
             background-color:lightsteelblue;
         }
+
+        .hide_show{
+                display:none;
+        }
+
         #trailer .modal-dialog {
             margin-top: 200px;
             width: 640px;
@@ -86,6 +91,11 @@ main_page_head = '''
 } 
     </style>
     <script type="text/javascript" charset="utf-8">
+        //display form when "Add New Movie" button is clicked
+        $(document).on('click', '.adder', function(event){
+                $('.hide_show').toggle();
+        });
+
         // Pause the video when the modal is closed
         $(document).on('click', '.hanging-close, .modal-backdrop, .modal', function (event) {
             // Remove the src so the player itself gets removed, as this is the only
@@ -142,6 +152,24 @@ main_page_content = '''
       </div>
     </div>
     <div class="container">
+    <!-- The admin input field for adding movies data to database -->
+    <div class="row"><button type="button" class="btn btn-info btn-lg adder center-block">Add New Movie Data</button></div>
+
+    <form class=hide_show>
+    <div class="form-group">
+        <label for="mov_title">Movie Title:</label>
+        <input type="text" class="form-control" id="mov_title">
+    </div>
+    <div class="form-group">
+         <label for="mov_art">Movie Art Url:</label>
+        <input type="text" class="form-control" id="mov_art">
+    </div>
+    <div class="form-group">
+         <label for="trailer_url">Movie Trailer Url:</label>
+        <input type="text" class="form-control" id="trailer_url">
+    </div>
+    <button type="button" class="btn btn-info">Add</button>
+    </form>
       {movie_tiles}
     </div>
   </body>
