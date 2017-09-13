@@ -155,18 +155,18 @@ main_page_content = '''
     <!-- The admin input field for adding movies data to database -->
     <div class="row"><button type="button" class="btn btn-info btn-lg adder center-block">Add New Movie Data</button></div>
 
-    <form class=hide_show>
+    <form class=hide_show  action="/cgi-bin/entertainment_center.py" method="get">
     <div class="form-group">
         <label for="mov_title">Movie Title:</label>
-        <input type="text" class="form-control" id="mov_title">
+        <input type="text" class="form-control" id="mov_title" name="mov_title">
     </div>
     <div class="form-group">
          <label for="mov_art">Movie Art Url:</label>
-        <input type="text" class="form-control" id="mov_art">
+        <input type="text" class="form-control" id="mov_art" name="mov_art">
     </div>
     <div class="form-group">
          <label for="trailer_url">Movie Trailer Url:</label>
-        <input type="text" class="form-control" id="trailer_url">
+        <input type="text" class="form-control" id="trailer_url" name="trailer_url">
     </div>
     <button type="button" class="btn btn-info">Add</button>
     </form>
