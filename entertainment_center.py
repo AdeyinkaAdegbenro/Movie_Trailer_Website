@@ -22,10 +22,8 @@ def insert(movie_title, art, trailer_url):
 
     # prepare a cursor object using cursor() method
     cursor = db.cursor()
-
     # insert data into table as per requirement
     sql = "INSERT INTO MOVIEDATA (title,movie_art, youtube_url) VALUES (?, ?, ?)" 
-
     params = (movie_title, art, trailer_url)
     cursor.execute(sql , params)
     # disconnect from server
