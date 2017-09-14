@@ -19,4 +19,5 @@
  				$ Python views.py
 
  Then in your broswer, visit http://loclhost:5000/fresh_tomates. Feel free to add your own movie trailers.
-| Visit https://adeyinkaadegbenro.github.io/Movie_Trailer_Website/ to view a sample of the generated page.
+
+| This app is live on http://adeyinka.pythonanywhere.com/
