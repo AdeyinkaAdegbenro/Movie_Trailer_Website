@@ -1,9 +1,9 @@
-from flask import Flask
+from app import app
 from flask import render_template, url_for, request, redirect,flash,Markup, session
-import entertainment_center , insert_data
+from app import entertainment_center , insert_data
 import re
 
-app =Flask(__name__)
+
 app.config.from_object(__name__)
 app.config.update(dict(
 						SECRET_KEY='development key'))
@@ -48,7 +48,3 @@ def fresh_tomatoes():
 		flash('Movie Trailer added successfully')
 		#refresh page
 		return redirect(url_for('fresh_tomatoes'))
-
-
-if __name__ == "__main__" :
-	app.run(debug=True)

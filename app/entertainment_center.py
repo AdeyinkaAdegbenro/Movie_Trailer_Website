@@ -1,6 +1,6 @@
 import sqlite3
 
-db_file = 'app.db'
+db_file = 'app/app.db'
 
 def display_trailers():
     db = sqlite3.connect(db_file)
